@@ -1,0 +1,168 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+
+}
+body{
+    background-size: cover;
+    background-color: rgb(250, 224, 228);
+}
+
+header{
+    display: flex;
+    height: 70px;
+    background-color: rgb(252, 223, 231);
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    
+}
+.logo{
+    height: flex;
+    align-items: center;
+}
+
+.img{
+    height: 20px;
+    margin-right: 10px;
+}
+
+nav{
+    max-width: 100%;
+    margin: auto;
+    background-color: pink;
+    font-size: 18px;
+    margin-top: 0%;
+    font-weight: 600;
+    padding-right: 10px;
+}
+/*codigos de estrutura de menu horizontal(aunque en estos codigos son para el box)*/
+.menu-horizontal{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+/*estrctura estetica de menu horizontal,sin tocar el fondo del box*/
+}
+.menu-horizontal > li > a{
+    display: block;
+    padding: 15px 20px;
+    color:rgb(207, 40, 90);
+    text-decoration: none;
+}
+
+.menu-horizontal > li:hover{
+    background-color: rgb(252, 223, 231);
+}
+/*codigos de menu vertical para dar estilo y medidas*/
+.menu-vertical{
+    position: absolute;
+    display: none;
+    list-style: none;
+    width: 100px;
+    background-color: rgb(252, 223, 231);
+
+}
+.menu-horizontal li:hover .menu-vertical{
+    display: block;
+    width: 1000px;
+}
+.menu-vertical li:hover{
+    background-color:rgb(252, 223, 231);
+}
+.menu-vertical li a{
+    display: block;
+    color:rgb(207, 40, 90);
+    padding: 15px 15px 15px ;
+}
+
+header {
+    background-color: rgb(255, 178, 191);
+    color:  rgb(207, 40, 90);
+    padding: 10px 0;
+    align-items: center;
+}
+
+
+main {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px red;
+}
+
+.producto {
+    display: flex;
+    align-items: center;
+}
+
+
+.descripcion {
+    flex: 1;
+}
+
+.descripcion h2 {
+    color: red;
+    font-size: 24px;
+    margin-top: 0;
+}
+
+.producto img {
+    width: 45%;
+    height: auto;
+    margin-right: 30px;
+}
+
+.descripcion p {
+    line-height: 1.6;
+    font-size: 25;
+}
+
+
+footer {
+    background-color: rgb(207, 40, 90);
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.logo img {
+    max-width: 50px;
+    height: auto;
+}
+
+
+.contacto {
+    text-align: center;
+}
+
+.contacto p {
+    margin: 5px 0;
+}
+@media (min-width: 1024px) {
+    .container{
+       width: 80%;
+    }
+}
+@media (min-width: 768px) and (max-width: 1023px){
+    .container{
+        width: 90%;
+    }
+}
+@media (max-width: 767px){
+    .container{
+        width: 100%;
+    }
+}
